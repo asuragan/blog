@@ -32,6 +32,9 @@ p {
   color: var(--text-color);
   font-size: 20px;
   margin-bottom: 1.2rem;
+  text-align: justify;
+  text-indent: 1.5rem;
+  hyphens: auto;
 }
 
 h1,
