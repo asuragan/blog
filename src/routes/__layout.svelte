@@ -30,7 +30,7 @@
   <main class:show={$isSidebarOpen}>
     <SidebarToggle />
     <Header />
-    <div>
+    <div class="button">
     <button on:click={e => fontSize+= 0.05}>+</button>
     <button on:click={e => fontSize-= 0.05}>-</button>
     </div>
@@ -61,7 +61,19 @@
   .show {
     transform: translateX(18rem);
   }
-
+  .button {
+    display: block;
+    max-width: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+   }
+  button {
+    height: 3rem;
+    width: 3rem;
+    margin-right: 5px;
+  }
+	
   @media screen and (max-width: 800px) {
     .show {
       transform: translateX(14rem);
