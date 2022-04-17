@@ -13,6 +13,7 @@
 <script>
   import PostItem from "$lib/components/PostItem.svelte";
   import Seo from "$lib/components/Seo.svelte";
+  import Pagination from "$lib/components/Pagination.svelte";
   import { siteTitle, siteDescription } from "$lib/constants";
   export let posts;
 
@@ -27,3 +28,5 @@
 {#each posts as post}
   <PostItem {post} />
 {/each}
+
+<Pagination />
