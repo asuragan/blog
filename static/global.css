@@ -8,10 +8,10 @@
 }
 
 :root[data-theme="dark"] {
-  --bg-color: #112042;
+  --bg-color: #1b1b1b;
   --brand-color: #3f83ba;
-  --text-color: #787878;
-  --headers-color: #a7a7a7;
+  --text-color: #aaa;
+  --headers-color: #eee;
   --text-light: #26407c;
   --sidebar-bg: #111;
 }
