@@ -22,7 +22,7 @@
   import SvelteTheme from "svelte-themes/SvelteTheme.svelte";
   import Header from "$lib/components/Header.svelte";
   
-  let fontSize = 1;
+  let fontSize = 1.05;
 </script>
 
 <div class="wrapper overflow-hidden">
@@ -31,6 +31,7 @@
     <SidebarToggle />
     <Header />
     <div class="button">
+    <input type="range" min="1" max="1.4" step="0.05" bind:value={fontSize} />
     <button on:click={e => fontSize+= 0.05}>+</button>
     <button on:click={e => fontSize-= 0.05}>-</button>
     </div>
