@@ -30,6 +30,7 @@ body {
 p {
   color: var(--text-color);
   margin-bottom: 1.2rem;
+  font-size: var(--fontSize);
   text-align: justify;
   text-indent: 1.5rem;
   hyphens: auto;
