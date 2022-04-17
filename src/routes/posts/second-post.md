@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "It’s a sin to kill a mockingbird"
+title: "Баумейстер о Питерсоне"
 description: "Truly it was a great journey, and in it I met with many, whom to know was to love;"
 categories:
   - Питерсон
-  - space
+  - Баумейстер
 published: true
 ---
 
