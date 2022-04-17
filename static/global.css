@@ -1,8 +1,8 @@
 :root {
-  --bg-color: #fff;
+  --bg-color: #f0e7cc;
   --brand-color: #333;
-  --text-color: #555;
-  --headers-color: #333;
+  --text-color: #000;
+  --headers-color: #000;
   --text-light: #bbb;
   --sidebar-bg: #222;
 }
