@@ -21,6 +21,8 @@
   import { isSidebarOpen } from "$lib/stores";
   import SvelteTheme from "svelte-themes/SvelteTheme.svelte";
   import Header from "$lib/components/Header.svelte";
+  
+  let fontSize = 1;
 </script>
 
 <div class="wrapper overflow-hidden">
@@ -28,8 +30,14 @@
   <main class:show={$isSidebarOpen}>
     <SidebarToggle />
     <Header />
+    <div>
+    <button on:click={e => fontSize+= 0.05}>+</button>
+    <button on:click={e => fontSize-= 0.05}>-</button>
+    </div>
     <article class="container">
-      <slot />
+      <div style="--fontSize: {fontSize}rem">
+        <slot />
+      </div>
     </article>
   </main>
 </div>
@@ -44,7 +52,9 @@
   main {
     width: 100%;
   }
-
+	p {
+		font-size: var(--fontSize);
+	}
   article {
     margin: 2rem auto;
   }
