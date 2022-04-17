@@ -4,7 +4,7 @@ export const menu = [
     url: "/",
   },
   {
-    title: "Categories",
+    title: "Теги",
     url: "/categories",
   },
   {
@@ -13,8 +13,8 @@ export const menu = [
   },
 ];
 
-export const siteTitle = "Satou";
-export const siteDescription = "My blog";
+export const siteTitle = "Блог";
+export const siteDescription = "Мой блог";
 
 export const footerText =
   /* <Current Year> is already prefixed */ "All rights reserved";
