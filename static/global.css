@@ -1,5 +1,5 @@
 :root {
-  --bg-color: #f0e7cc;
+  --bg-color: #fff2d8;
   --brand-color: #333;
   --text-color: #000;
   --headers-color: #000;
@@ -18,9 +18,8 @@
 
 body {
   margin: 0;
-  font-family: 'Merriweather', serif;
-  line-height: 1.6;
-  letter-spacing: 0.01rem;
+  font-family: 'Droid Sans', sans-serif;
+  line-height: 1.2;
   text-rendering: optimizeLegibility;
   font-weight: 400;
   font-size: 1.1rem;
