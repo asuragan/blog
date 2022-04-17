@@ -22,7 +22,7 @@
   import SvelteTheme from "svelte-themes/SvelteTheme.svelte";
   import Header from "$lib/components/Header.svelte";
   
-  let fontSize = 1.05;
+  let fontSize = 1.15;
 </script>
 
 <div class="wrapper overflow-hidden">
@@ -32,8 +32,7 @@
     <Header />
     <div class="button">
     <input type="range" min="1" max="1.4" step="0.05" bind:value={fontSize} />
-    <button on:click={e => fontSize+= 0.05}>+</button>
-    <button on:click={e => fontSize-= 0.05}>-</button>
+    <p> Size: {fontSize} </p>
     </div>
     <article class="container">
       <div style="--fontSize: {fontSize}rem">
