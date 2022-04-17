@@ -1,31 +1,33 @@
 ---
 layout: post
 title: "It’s a sin to kill a mockingbird"
-description: "Truly it was a great journey, and in it I met with many, whom to know was to love; but whom never could I see again; for life has not space enough; and each must do his duty to the security and well-being of the Redoubt."
+description: "Truly it was a great journey, and in it I met with many, whom to know was to love;"
 categories:
-  - journey
+  - Питерсон
   - space
-date: "3rd April 2021"
 published: true
-edit: https://github.com/sharu725/yuyutsu/edit/master/src/routes/posts/firstpost.md
 ---
 
-<script>
-  import Counter from "$lib/components/Counter.svelte"
-</script>
+Чем интересна фигура Питерсона? Она интересна тем, что он — прекрасный диагност ситуации, когда мы дошли до логического конца. Идея свободы, идеал свободы, идеал либерального общества постепенно стал принимать формы, достаточно опасные, которые Питерсон диагностирует как авторитарные, тоталитарные и даже тиранические.
 
-Truly it was a great journey, and in it I met with many, whom to know was to love; but whom never could I see again; for life has not space enough; and each must do his duty to the security and well-being of the Redoubt. Yet, for all that I have set down, we travelled much, always; but there were so many millions, and so few years.
+О чем идет речь? Речь идет о том, что во имя свободы определенные идеологии или определенные подходы блокируют всякую возможность вести серьезные разговоры и называть вещи своими именами. Это проявляется и в сфере политики, и в сфере культуры, и в интеллектуальной сфере. Например, когда речь идет о политике идентичности. Я это называю продажей эмоций, торговлей эмоциями.
 
-### A sample svelte component
+Как устроена торговля эмоциями? Когда, например, мы организуем некое меньшинство. Я так покажу, чтобы это было более наглядно. Например, мы говорим, что наши цвета — синий и зеленый, а красный цвет нас раздражает — он авторитарный, он тиранический. И мы пытаемся запретить красный цвет, потому что он нас травмирует. И вот либеральное общество — и американское, и европейское — постепенно разрастается в торговлю эмоциями: когда мы боимся обидеть чувства верующих другой группы, когда мы изобретаем окольные пути, чтобы не говорить о подлинных вещах, о реальности. И на самом деле в этом и проявляется тирания.
 
-<Counter />
+Это извращение идеи свободы и эти базовые свободы стали принимать формы совершенно уродливые, когда мы вообще не можем обсуждать что-либо, чтобы не обидеть кого-либо. Но если раньше это было, скажем, благородной духовной идеей — не обижать, бережно относиться, то сейчас эти группы очень активны. Они торгуют этой ущемленностью.
 
-Atticus said to Jem one day, “I’d rather you shot at tin cans in the backyard, but I know you’ll go after birds. Shoot all the blue jays you want, if you can hit ‘em, but [link to home](/) remember it’s a sin to kill a mockingbird.” That was the only time I ever heard Atticus say it was a sin to do something, and I asked Miss Maudie about it. “Your father’s right,” she said. “Mockingbirds don’t do one thing except make music for us to enjoy. They don’t eat up people’s gardens, don’t nest in corn cribs, they don’t do one thing but sing their hearts out for us. That’s why it’s a sin to kill a mockingbird.
+Они пытаются занимать определенные ниши, поскольку в их руках масс-медиа, в их руках публичная сфера, в их руках университеты. Это то, что делает невозможной вообще рациональную дискуссию: когда истины нет, стремление к истине тоталитарно, когда вообще разговоры о четких различениях, о добре и зле, справедливом и несправедливом опасны и авторитарны.
 
-I took a deep breath and listened to the old brag of my heart. I am, I am, I am.
+И я думаю, речь еще в том, что раньше была ссылка на авторитет. То есть, это влияние постмодернизма. Авторитет — это тоже авторитарно. Авторитет опасен. Большой авториет опасен, по мнению постмодернистской культуры.
 
-We believe that we can change the things around us in accordance with our desires—we believe it because otherwise we can see no favourable outcome. We do not think of the outcome which generally comes to pass and is also favourable: we do not succeed in changing things in accordance with our desires, but gradually our desires change. The situation that we hoped to change because it was intolerable becomes unimportant to us. We have failed to surmount the obstacle, as we were absolutely determined to do, but life has taken us round it, led us beyond it, and then if we turn round to gaze into the distance of the past, we can barely see it, so imperceptible has it become.
+От университетской культуры, масс-медиа, журналов, каналов, вплоть до публичного политического дискурса, вот это все можно назвать фазой интеллектуального безумия, интеллектуального помешательства во имя благородных идей. И Питерсон в этом контексте — человек, который, как в старых сказках, пытается играть роль здравого смысла. Но в нашем мире здравый смысл не востребован.
 
-The most beautiful things in the world cannot be seen or touched, they are felt with the heart.
+Хочу сказать, что речь идет о человеке, который пытается говорить от лица здравого смысла.  Пытается говорить о том, что мы дошли до очень опасной черты, дальше которой нет ни разума, ни рациональности, ни ценностей, ни иерархических структур, ни вообще какого-либо порядка. Мы втягиваемся в хаос, который будет разрушителен все дальше и дальше.
 
-Hello babies. Welcome to Earth. It’s hot in the summer and cold in the winter. It’s round and wet and crowded. On the outside, babies, you’ve got a hundred years here. There’s only one rule that I know of, babies-“God damn it, you’ve got to be kind.
+Да, мы пирамиду низложили уже до горизонтального уровня совершенно и нет никаких конструкций... А все может функционировать только если есть иерархия, если есть эта пирамида, если есть компетенции и четкие ценностные различения.
+
+Постмодернизм не создал идею свободы — он на ней паразитирует. Постмодернизм не создал многообразные дискурсы — он на них паразитирует. - Многообразие имеет смысл только, если есть общий язык или словарь для оценки важности этого разнообразия. То разнообразие, которое никак не связано друг с другом — это хаос, фрагментарность, разрыв. И постмодернизм, разбивая все на фрагментарные, ничем не связанные элементы, просто парализует мышление, парализует любой диалог, поскольку любой диалог нуждается в общих словах, в общих схемах мышления, а это постмодернизм отрицает. Это он использует как некие догматы веры — свобода, многообразие, плюрализм. На самом деле здесь нет свободы, здесь нет плюраризма.
+
+Многообразие имеет значение, если есть некое единство. Всегда многообразие существует в свете некоего единства. Например, единство человечества. Тогда у нас много языков, много культур, но человечество едино, и мы говорим о человеческой природе, об универсальных ценностях. Это классический либерализм. Он создал этот плюрализм, а до него христианство, а до него еще античность.
+
+Пока говорить, что постмодерн создал свободу, идею свободы и плюрализма — это просто, мне кажется, идеологический ход постмодернистов, совершенно неоправданный. Я здесь не дискутирую, я просто показываю свою позицию. Там нет плюрализма, там есть раздробление локально сосуществующих, ничем не связанных элементов.
