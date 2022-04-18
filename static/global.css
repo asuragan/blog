@@ -86,9 +86,9 @@ main,
   margin-right: auto;
 }
 
-:host(.left-\[-33px\]) {
+:host(.leading-none) {
   display: none;
 }
-:host(.left-\[-22px\]) {
+:host(.sidebar-collapsed) {
   display: none;
 }
