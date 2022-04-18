@@ -11,31 +11,28 @@
 </script>
 
 <script>
-    import { onMount } from 'svelte';
-    import auth from '$lib/services/auth';
-    import { isAuthenticated, user } from '$lib/stores/auth';
-
-    let auth0Client;
-
-    onMount(async () => {
-        isAuthenticated.set(await auth0Client.isAuthenticated());
-        user.set(await auth0Client.getUser());
-    });
-
-    function login() {
-        auth.loginWithPopup(auth0Client);
-    }
-
-    function logout() {
-        auth.logout(auth0Client);
-    }
-</script>
-
-<script>
   import PostItem from "$lib/components/PostItem.svelte";
   import Seo from "$lib/components/Seo.svelte";
   import { siteTitle, siteDescription } from "$lib/constants";
   export let posts;
+  import { onMount } from 'svelte';
+  import auth from '$lib/services/auth';
+  import { isAuthenticated, user } from '$lib/stores/auth';
+
+  let auth0Client;
+
+  onMount(async () => {
+      isAuthenticated.set(await auth0Client.isAuthenticated());
+      user.set(await auth0Client.getUser());
+  });
+
+  function login() {
+      auth.loginWithPopup(auth0Client);
+  }
+
+  function logout() {
+      auth.logout(auth0Client);
+  }
 
   const seo = {
     title: siteTitle,
