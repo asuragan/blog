@@ -38,11 +38,9 @@
             aria-describedby="emailHelp"
             placeholder="Email Address"
           />
-          {#if title != "Login"}
             <div id="emailHelp" class="form-text">
               We'll never share your email with anyone else.
             </div>
-          {/if}
         </div>
         <div class="mb-3">
           <label for="passInput" class="form-label">Password</label>
@@ -55,11 +53,7 @@
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
-      {#if title == "Login"}
-        <p class="float-end mt-3">
-          Not a user? <a href="/signup" class="card-link">Sign Up</a>
         </p>
-      {/if}
     </div>
   </div>
 </div>
