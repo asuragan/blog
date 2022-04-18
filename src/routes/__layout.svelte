@@ -16,7 +16,6 @@
 <script>
   import "../../static/reset.css";
   import "../../static/global.css";
-  import Seo from "$lib/components/Seo.svelte";
   import SidebarToggle from "$lib/components/SidebarToggle.svelte";
   import Sidebar from "$lib/components/Sidebar.svelte";
   import { isSidebarOpen, isLoggedIn } from "$lib/stores";
@@ -38,29 +37,21 @@
       }
     });
   });
-	
- const seo = {
-    title: siteTitle,
-    description: siteDescription,
-  };
-  
+	 
   let fontSize = 1.15;
 </script>
 
-<Seo {...seo} />
-
-{#if title == "Login"}
+{#if isLoggedIn == "false"}
 	<div class="wrapper overflow-hidden">
 		<main>
 			<article class="container">
-				<Header />
 				<slot />
 			</article>
 		</main>
 	</div>
 {/if}
 
-{#if title != "Login"}
+{#if isLoggedIn != "false"}
 	<div class="wrapper overflow-hidden">
 	  <Sidebar />
 	  <main class:show={$isSidebarOpen}>
