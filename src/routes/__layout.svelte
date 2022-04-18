@@ -73,6 +73,12 @@
     width: 3rem;
     margin-right: 5px;
   }
+  :host(.leading-none) {
+  display: none;
+  }
+  :host(.sidebar-collapsed) {
+  display: none;
+  }
 	
   @media screen and (max-width: 800px) {
     .show {
