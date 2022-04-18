@@ -41,37 +41,35 @@
   let fontSize = 1.15;
 </script>
 
-{#if isLoggedIn == "false"}
+{#if isLoggedIn == "true"}
+
 	<div class="wrapper overflow-hidden">
-		<main>
+		<Sidebar />
+		<main class:show={$isSidebarOpen}>
+			<SidebarToggle />
+			<Header />
+			<div class="button">
+				<input type="range" min="1.1" max="1.5" step="0.05" bind:value={fontSize} />
+				<p> Size: {fontSize} </p>
+			</div>
 			<article class="container">
-				<slot />
+				<div style="--fontSize: {fontSize}rem">
+					<slot />
+				</div>
 			</article>
 		</main>
-	</div>
-{/if}
-
-{#if isLoggedIn != "false"}
-	<div class="wrapper overflow-hidden">
-	  <Sidebar />
-	  <main class:show={$isSidebarOpen}>
-	    <SidebarToggle />
-	    <Header />
-	    <div class="button">
-	    <input type="range" min="1.1" max="1.5" step="0.05" bind:value={fontSize} />
-	    <p> Size: {fontSize} </p>
-	    </div>
-	    <article class="container">
-	      <div style="--fontSize: {fontSize}rem">
-		<slot />
-	      </div>
-	    </article>
-	  </main>
 	</div>
 
 	<SvelteTheme />
 
+{:else}
+	
+	<div class="wrapper overflow-hidden">
+		<slot />
+	</div>
+
 {/if}
+
 
 <style>
   .wrapper {
