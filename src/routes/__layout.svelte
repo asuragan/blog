@@ -41,21 +41,18 @@
   };
 </script>
 
-if (title == "Login") {
+{#if title == "Login"}
+	<slot />
+{/if}
 
-	<div class="wrapper overflow-hidden">
-		<slot />
-	</div>
-
-} else {
-
+{#if title != "Login"}
 	<div class="wrapper overflow-hidden">
 	  <Sidebar />
 	  <main class:show={$isSidebarOpen}>
 	    <SidebarToggle />
 	    <Header />
 	    <div class="button">
-	    <input type="range" min="1" max="1.4" step="0.05" bind:value={fontSize} />
+	    <input type="range" min="1.1" max="1.5" step="0.05" bind:value={fontSize} />
 	    <p> Size: {fontSize} </p>
 	    </div>
 	    <article class="container">
@@ -68,7 +65,7 @@ if (title == "Login") {
 
 	<SvelteTheme />
 
-}
+{/if}
 
 <style>
   .wrapper {
