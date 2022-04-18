@@ -40,3 +40,13 @@
 					<slot />
 			</article>
 	</div>
+
+<style>
+	
+div {
+    display: grid;
+    margin: 1rem auto;
+    text-align: center;
+}
+	
+</style>
