@@ -16,6 +16,7 @@
 <script>
   import "../../static/reset.css";
   import "../../static/global.css";
+  import { browser } from "$app/env";
   import SidebarToggle from "$lib/components/SidebarToggle.svelte";
   import Sidebar from "$lib/components/Sidebar.svelte";
   import { isSidebarOpen, isLoggedIn } from "$lib/stores";
@@ -39,7 +40,9 @@
   });
 	 
   let fontSize = 1.15;
+if (browser){
   const isLog = window.localStorage.getItem('isLoggedIn');
+}
 </script>
 
 {#if isLog == "true"}
