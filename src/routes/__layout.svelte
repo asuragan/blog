@@ -21,7 +21,6 @@
   import { isSidebarOpen } from "$lib/stores";
   import SvelteTheme from "svelte-themes/SvelteTheme.svelte";
   import Header from "$lib/components/Header.svelte";
-  userbase.init({ appId: '9e8cfe4e-837a-41ee-8e38-7555fdfa2c66' })
   
   let fontSize = 1.15;
 </script>
