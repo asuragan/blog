@@ -39,10 +39,7 @@
   });
 	 
   let fontSize = 1.15;
-  const isLog = localStorage.getItem('isLoggedIn');
 </script>
-
-{#if isLog == "true"}
 
 	<div class="wrapper overflow-hidden">
 		<Sidebar />
@@ -62,19 +59,6 @@
 	</div>
 
 	<SvelteTheme />
-
-{:else}
-	
-	<div class="wrapper overflow-hidden">
-		<main class:show={$isSidebarOpen}>
-			<article class="container">
-				<slot />
-			</article>
-		</main>
-	</div>
-
-{/if}
-
 
 <style>
   .wrapper {
