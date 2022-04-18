@@ -42,6 +42,7 @@
 </script>
 
 {#if title == "Login"}
+	<Header />
 	<slot />
 {/if}
 
