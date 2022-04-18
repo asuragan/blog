@@ -1,15 +1,6 @@
 import createAuth0Client from '@auth0/auth0-spa-js';
-import { user, isAuthenticated, popupOpen } from '$lib/stores/auth';
+import { user, isAuthenticated, popupOpen } from '$lib/stores';
 import config from '$lib/config/auth_config';
-
-async function createClient() {
-    let auth0Client = await createAuth0Client({
-        domain: config.domain,
-        client_id: config.clientId
-    });
-
-    return auth0Client;
-}
 
 async function loginWithPopup(client, options) {
     popupOpen.set(true);
@@ -31,7 +22,6 @@ function logout(client) {
 }
 
 const auth = {
-    createClient,
     loginWithPopup,
     logout
 };
