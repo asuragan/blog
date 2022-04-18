@@ -18,10 +18,9 @@
   import "../../static/global.css";
   import SidebarToggle from "$lib/components/SidebarToggle.svelte";
   import Sidebar from "$lib/components/Sidebar.svelte";
-  import { isSidebarOpen } from "$lib/stores";
+  import { isSidebarOpen, isLoggedIn } from "$lib/stores";
   import SvelteTheme from "svelte-themes/SvelteTheme.svelte";
   import Header from "$lib/components/Header.svelte";
-  import { isLoggedIn } from "../stores/authStore";
   import App from "./fb";
   import { onMount } from "svelte";
   import { getAuth, onAuthStateChanged } from "firebase/auth";
