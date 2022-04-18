@@ -39,9 +39,10 @@
   });
 	 
   let fontSize = 1.15;
+  const isLog = window.localStorage.getItem('isLoggedIn');
 </script>
 
-{#if isLoggedIn == "true"}
+{#if isLog == "true"}
 
 	<div class="wrapper overflow-hidden">
 		<Sidebar />
@@ -65,7 +66,11 @@
 {:else}
 	
 	<div class="wrapper overflow-hidden">
-		<slot />
+		<main class:show={$isSidebarOpen}>
+			<article class="container">
+				<slot />
+			</article>
+		</main>
 	</div>
 
 {/if}
