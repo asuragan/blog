@@ -23,6 +23,7 @@
   import Header from "$lib/components/Header.svelte";
   
   let fontSize = 1.15;
+  let visible = "none";
 </script>
 
 <div class="wrapper overflow-hidden">
@@ -53,7 +54,7 @@
     width: 100%;
   }
 	p {
-		font-size: var(--fontSize);
+	  font-size: var(--fontSize);
 	}
   article {
     margin: 2rem auto;
@@ -73,13 +74,13 @@
     width: 3rem;
     margin-right: 5px;
   }
-  :host(.leading-none) {
+  :host-context(.leading-none) {
   display: none;
   }
-  :host(.sidebar-collapsed) {
+  :host-context(.sidebar-collapsed) {
   display: none;
   }
-	
+  
   @media screen and (max-width: 800px) {
     .show {
       transform: translateX(14rem);
