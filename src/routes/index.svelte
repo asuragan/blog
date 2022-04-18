@@ -17,7 +17,7 @@
   export let posts;
   import { onMount } from 'svelte';
   import auth from '$lib/services/auth';
-  import { isAuthenticated, user } from '$lib/stores/auth';
+  import { isAuthenticated, user } from '$lib/stores';
 
   let auth0Client;
 
