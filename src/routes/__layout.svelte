@@ -41,24 +41,34 @@
   };
 </script>
 
-<div class="wrapper overflow-hidden">
-  <Sidebar />
-  <main class:show={$isSidebarOpen}>
-    <SidebarToggle />
-    <Header />
-    <div class="button">
-    <input type="range" min="1" max="1.4" step="0.05" bind:value={fontSize} />
-    <p> Size: {fontSize} </p>
-    </div>
-    <article class="container">
-      <div style="--fontSize: {fontSize}rem">
-        <slot />
-      </div>
-    </article>
-  </main>
-</div>
+if (title == "Login") {
 
-<SvelteTheme />
+	<div class="wrapper overflow-hidden">
+		<slot />
+	</div>
+
+} else {
+
+	<div class="wrapper overflow-hidden">
+	  <Sidebar />
+	  <main class:show={$isSidebarOpen}>
+	    <SidebarToggle />
+	    <Header />
+	    <div class="button">
+	    <input type="range" min="1" max="1.4" step="0.05" bind:value={fontSize} />
+	    <p> Size: {fontSize} </p>
+	    </div>
+	    <article class="container">
+	      <div style="--fontSize: {fontSize}rem">
+		<slot />
+	      </div>
+	    </article>
+	  </main>
+	</div>
+
+	<SvelteTheme />
+
+}
 
 <style>
   .wrapper {
