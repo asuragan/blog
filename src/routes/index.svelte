@@ -15,24 +15,6 @@
   import Seo from "$lib/components/Seo.svelte";
   import { siteTitle, siteDescription } from "$lib/constants";
   export let posts;
-  import { onMount } from 'svelte';
-  import auth from '$lib/services/auth';
-  import { isAuthenticated, user } from '$lib/stores';
-
-  let auth0Client;
-
-  onMount(async () => {
-      isAuthenticated.set(await auth0Client.isAuthenticated());
-      user.set(await auth0Client.getUser());
-  });
-
-  function login() {
-      auth.loginWithPopup(auth0Client);
-  }
-
-  function logout() {
-      auth.logout(auth0Client);
-  }
 
   const seo = {
     title: siteTitle,
@@ -41,11 +23,6 @@
 </script>
 
 <Seo {...seo} />
-{#if $isAuthenticated}
-<button on:click={logout}>Logout</button>
-  {#each posts as post}
-    <PostItem {post} />
-  {/each}
-{:else}
-    <button on:click={login}>Login</button>
-{/if}
+{#each posts as post}
+  <PostItem {post} />
+{/each}
