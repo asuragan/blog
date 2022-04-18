@@ -21,6 +21,23 @@
   import { isSidebarOpen } from "$lib/stores";
   import SvelteTheme from "svelte-themes/SvelteTheme.svelte";
   import Header from "$lib/components/Header.svelte";
+  import { isLoggedIn } from "../stores/authStore";
+  import App from "./fb";
+  import { onMount } from "svelte";
+  import { getAuth, onAuthStateChanged } from "firebase/auth";
+  import { goto } from "$app/navigation";
+  
+  onMount(() => {
+    const auth = getAuth();
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        isLoggedIn.update(() => true);
+      } else {
+        isLoggedIn.update(() => false);
+        goto("/login");
+      }
+    });
+  });
   
   let fontSize = 1.15;
 </script>
