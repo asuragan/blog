@@ -1,3 +1,18 @@
+<script context="module">
+  export const load = async ({ fetch }) => {
+    // Use a `limit` querystring parameter to fetch a limited number of posts
+    // e.g. fetch('posts.json?limit=5') for 5 most recent posts
+    const res = await fetch("/api/posts.json");
+    const posts = await res.json();
+
+    return {
+      stuff: {
+        posts,
+      },
+    };
+  };
+</script>
+
 <script>
   import "../../static/reset.css";
   import "../../static/global.css";
@@ -26,24 +41,17 @@
   let fontSize = 1.15;
 </script>
 
-<script context="module">
-  export const load = async ({ fetch }) => {
-    // Use a `limit` querystring parameter to fetch a limited number of posts
-    // e.g. fetch('posts.json?limit=5') for 5 most recent posts
-    const res = await fetch("/api/posts.json");
-    const posts = await res.json();
 
-    return {
-      stuff: {
-        posts,
-      },
-    };
-  };
-</script>
 
 {#if title == "Login"}
-	<Header />
-	<slot />
+	<div class="wrapper overflow-hidden">
+		<main>
+			<article class="container">
+				<Header />
+				<slot />
+			</article>
+		</main>
+	</div>
 {/if}
 
 {#if title != "Login"}
